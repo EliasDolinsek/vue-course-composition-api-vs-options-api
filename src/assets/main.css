@@ -1,35 +1,35 @@
-@import "./base.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
 
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-
-  font-weight: normal;
+* {
+  font-family: "Roboto", sans-serif;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
+body {
+  margin: 0;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+.button {
+  border: none;
+  padding: 6px 24px;
+  border-radius: 4px;
+  font-size: 0.9rem;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+.button-green {
+  background: #044040;
+  color: rgba(255, 255, 255, 0.89);
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+.button-red {
+  background: #d92525;
+  color: rgba(255, 255, 255, 0.89);
+}
+
+.button-red-dark {
+  background: #591c21;
+  color: rgba(255, 255, 255, 0.89);
+}
+
+.button-grey {
+  color: rgba(0, 0, 0, 0.89);
 }
