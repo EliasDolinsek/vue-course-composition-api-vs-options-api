@@ -1,16 +1,3 @@
-<template>
-  <div class="action-title">
-    <p>Laps</p>
-    <span class="material-symbols-outlined" @click="$emit('clearLaps')">close</span>
-  </div>
-  <div>
-    <div v-for="(lap, index) in laps" :key="index" class="lab-item">
-      <p>Lap #{{laps.length - index}}</p>
-      <p>{{formatSecondsToReadableTime(lap)}}</p>
-    </div>
-  </div>
-</template>
-
 <script setup>
 import { formatSecondsToReadableTime } from "../utils/utils";
 
@@ -23,6 +10,21 @@ const props = defineProps({
 
 const emit = defineEmits(["clearLaps"]);
 </script>
+
+<template>
+  <div class="action-title">
+    <p>Laps</p>
+    <span class="material-symbols-outlined" @click="$emit('clearLaps')">
+      close
+    </span>
+  </div>
+  <div>
+    <div v-for="(lap, index) in laps" :key="index" class="lab-item">
+      <p>Lap #{{ laps.length - index }}</p>
+      <p>{{ formatSecondsToReadableTime(lap) }}</p>
+    </div>
+  </div>
+</template>
 
 <style scoped>
 .action-title {
@@ -48,7 +50,7 @@ const emit = defineEmits(["clearLaps"]);
 .lab-item {
   display: flex;
   justify-content: space-between;
-  color: #1C1B1F;
+  color: #1c1b1f;
   font-weight: 0.4rem;
   margin-left: 32px;
   margin-right: 32px;

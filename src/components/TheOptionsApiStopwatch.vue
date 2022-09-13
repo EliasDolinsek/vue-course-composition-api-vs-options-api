@@ -1,10 +1,10 @@
 <script>
 import { formatSecondsToReadableTime } from "../utils/utils";
-import LapsDisplay from "./LapsDisplay.vue";
+import TheOptionsApiLapsDisplay from "./TheOptionsApiLapsDisplay.vue";
 
 export default {
   name: "TheOptionsApiStopwatch",
-  components: { LapsDisplay },
+  components: { TheOptionsApiLapsDisplay },
   data: () => {
     return {
       seconds: 0,
@@ -44,7 +44,6 @@ export default {
       return formatSecondsToReadableTime(this.seconds);
     },
   },
-  components: { LapsDisplay },
 };
 </script>
 
@@ -65,7 +64,7 @@ export default {
       </button>
     </div>
   </div>
-  <LapsDisplay :laps="laps" @clear-laps="clearLaps" />
+  <TheOptionsApiLapsDisplay :laps="laps" @clear-laps="clearLaps" />
 </template>
 
 <style scoped></style>
