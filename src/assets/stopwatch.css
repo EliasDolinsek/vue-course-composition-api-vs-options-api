@@ -1,0 +1,20 @@
+.time-display {
+    text-align: center;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.buttons-container {
+    display: flex;
+    gap: 8px;
+    justify-content: center;
+}
+
+.stopwatch-container {
+    margin-top: 48px;
+    margin-bottom: 48px;
+}
+
+.api-title {
+    margin-left: 16px;
+}
