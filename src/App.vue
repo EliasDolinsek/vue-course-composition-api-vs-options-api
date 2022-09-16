@@ -7,7 +7,7 @@ import TheCompositionApiStopwatch from './components/TheCompositionApiStopwatch.
     <div>
       <TheCompositionApiStopwatch class="stopwatch"/>
     </div>
-    <p>Test</p>
+    <p>Options API</p>
   </main>
 </template>
 
