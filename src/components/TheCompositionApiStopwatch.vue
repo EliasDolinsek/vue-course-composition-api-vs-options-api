@@ -2,7 +2,7 @@
 import "./../assets/stopwatch.css";
 import { computed } from "@vue/reactivity";
 import { reactive } from "vue";
-import LapsDisplay from "./LapsDisplay.vue";
+import TheCompositionApiLapsDisplay from "./TheCompositionApiLapsDisplay.vue";
 import { formatSecondsToReadableTime } from "../utils/utils";
 
 const stopwatchData = reactive({
@@ -65,7 +65,7 @@ const formattedRunningTime = computed(() => {
       </button>
     </div>
   </div>
-  <LapsDisplay :laps="stopwatchData.laps" @clear-laps="clearLaps" />
+  <TheCompositionApiLapsDisplay :laps="stopwatchData.laps" @clear-laps="clearLaps" />
 </template>
 
 <style scoped></style>
